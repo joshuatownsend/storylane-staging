@@ -1,0 +1,58 @@
+{
+  "demo": "cross-platform-dns-visibility",
+  "title": "See Every DNS Zone, on Every Platform, in One View",
+  "intro": {
+    "headline": "See Every DNS Zone in One View",
+    "subhead": "Microsoft, BIND and cloud DNS usually mean a different console each. Watch BlueCat Micetro list every zone in one inventory and narrow it to a single platform in one click. About 3 minutes.",
+    "buttonText": "Start demo"
+  },
+  "outro": {
+    "headline": "One inventory across Microsoft, BIND and cloud DNS, without moving a single zone.",
+    "cta": {
+      "text": "Start a Micetro evaluation",
+      "url": "https://bluecatnetworks.com"
+    }
+  },
+  "steps": [
+    {
+      "stepId": "open-dns-page",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/cross-platform-dns-visibility/step-01.png",
+      "callout": "Every primary zone in the estate, in one list: 44 of them, whichever server hosts it. Nobody had to visit a separate console to build this view."
+    },
+    {
+      "stepId": "open-dns-services",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/cross-platform-dns-visibility/step-02.png",
+      "callout": "Switch the sidebar to DNS services and Micetro lists every DNS platform it manages: BIND, Microsoft, AWS Route 53 and Azure. Teams keep their platforms and gain one view."
+    },
+    {
+      "stepId": "filter-microsoft",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/cross-platform-dns-visibility/step-03.png",
+      "callout": "One click narrows the grid to the Microsoft server: 11 zones, including the Active Directory-integrated ones."
+    },
+    {
+      "stepId": "filter-mdds",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/cross-platform-dns-visibility/step-04.png",
+      "callout": "Now the BIND-based MDDS appliance. Same grid, same columns, nine zones: nothing new to learn for a different platform."
+    },
+    {
+      "stepId": "filter-aws",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/cross-platform-dns-visibility/step-05.png",
+      "callout": "Cloud DNS joins the same inventory. Eleven Amazon Route 53 zones sit next to the on-premises ones, public and private alike."
+    },
+    {
+      "stepId": "inspect-zone",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/cross-platform-dns-visibility/step-06.png",
+      "callout": "Select a zone and the Inspector shows its SOA record and properties. This one lives in Route 53, but the view is the same whichever platform hosts it."
+    },
+    {
+      "stepId": "open-action-menu",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/cross-platform-dns-visibility/step-07.png",
+      "callout": "Everything you can do with a zone is under Action, and it is the same menu for every platform. Open zone takes you to its records."
+    },
+    {
+      "stepId": "open-zone-records",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/cross-platform-dns-visibility/step-08.png",
+      "callout": "The zone's 24 resource records, A, CNAME, NS, SRV and TXT, in the same grid layout. List every zone, then read any of them, in one tool."
+    }
+  ]
+}
