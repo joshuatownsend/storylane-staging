@@ -6,7 +6,7 @@
     "text": "See Micetro with your Meraki estate",
     "url": "https://bluecatnetworks.com"
   },
-  "prompt": "Product: BlueCat. Demo: \"Connect Cisco Meraki to Micetro with an API Key\".\nStory: Connect Cisco Meraki to Micetro in One Wizard\nYour Meraki branches already hold the networks, VLANs and clients you need to manage. Watch BlueCat Micetro connect to them with a single API key, with no appliance at any branch. About 3 minutes.\nAudience: network and DNS engineers and IT leaders evaluating the product. Tone: concise, confident, practical, no hype.\n10 screenshots, keep this order, one tooltip per image, calling out the highlighted UI element:\n1. Meraki is a built-in service type.\n2. Cisco Meraki, listed with the other DHCP and IPAM providers.\n3. A Micetro DHCP agent proxies the calls to Meraki. The central host works out of the box.\n4. Give the service a name you will recognise.\n5. Connect with a Meraki API key. That is the whole credential, and it stays masked.\n6. You can list organization or network IDs to skip, one per line. Here we sync everything.\n7. Review the summary. The key is not shown.\n8. Add a change comment.\n9. The service is added and the first sync starts.\n10. The branch networks appear in the same pane as everything else, with no change to your Meraki setup and no appliance at each branch.\nClose: One API key, and every Meraki network appears next to the rest of your IP space.\nEnd with a call to action: See Micetro with your Meraki estate.",
+  "prompt": "Product: BlueCat. Demo: \"Connect Cisco Meraki to Micetro with an API Key\".\nStory: Connect Cisco Meraki to Micetro in One Wizard\nYour Meraki branches already hold the networks, VLANs and clients you need to manage. Watch BlueCat Micetro connect to them with a single API key, with no appliance at any branch. About 3 minutes.\nAudience: network and DNS engineers and IT leaders evaluating the product. Tone: concise, confident, practical, no hype.\n10 screenshots, keep this order, one tooltip per image, calling out the highlighted UI element:\n1. Meraki is a built-in service type. Pick it from the list.\n2. Cisco Meraki, listed with the other DHCP and IPAM providers. Continue to its properties.\n3. A Micetro DHCP agent proxies the calls to Meraki. The central host works out of the box. Start by naming the service.\n4. Give the service a name you will recognise. Next, the credential Micetro uses to reach Meraki.\n5. Connect with a Meraki API key. That is the whole credential, and it stays masked. Check what else can be set.\n6. You can list organization or network IDs to skip, one per line. Here we sync everything. Continue to the summary.\n7. Review the summary. The key is not shown. Add the service.\n8. Micetro asks for a change comment, so every change carries its reason. Save it to add the service.\n9. The service is added and the first sync starts. Open the Meraki networks to see what it found.\n10. The branch networks appear in the same pane as everything else, with no change to your Meraki setup and no appliance at each branch.\nClose: One API key, and every Meraki network appears next to the rest of your IP space.\nEnd with a call to action: See Micetro with your Meraki estate.",
   "steps": [
     {
       "n": 1,
@@ -16,7 +16,7 @@
       "width": 2880,
       "height": 1800,
       "sha256": "25079f3b24c065cf9131911c7aeebd491acc8502118f105d4c98111702930649",
-      "callout": "Meraki is a built-in service type."
+      "callout": "Meraki is a built-in service type. Pick it from the list."
     },
     {
       "n": 2,
@@ -26,7 +26,7 @@
       "width": 2880,
       "height": 1800,
       "sha256": "28ace52a9db0b892509cab06f4f56702212c4546c641e87c699a8a7d23fe4412",
-      "callout": "Cisco Meraki, listed with the other DHCP and IPAM providers."
+      "callout": "Cisco Meraki, listed with the other DHCP and IPAM providers. Continue to its properties."
     },
     {
       "n": 3,
@@ -36,7 +36,7 @@
       "width": 2880,
       "height": 1800,
       "sha256": "de6174d4f884b8975e492af0fa0b031b5217c5b5fd7a0a94766fe72b3f70da28",
-      "callout": "A Micetro DHCP agent proxies the calls to Meraki. The central host works out of the box."
+      "callout": "A Micetro DHCP agent proxies the calls to Meraki. The central host works out of the box. Start by naming the service."
     },
     {
       "n": 4,
@@ -46,7 +46,7 @@
       "width": 2880,
       "height": 1800,
       "sha256": "554c23b46d625afb4608d57ae4f6a143e3068c27d40f680ed3eaa6f738ab7663",
-      "callout": "Give the service a name you will recognise."
+      "callout": "Give the service a name you will recognise. Next, the credential Micetro uses to reach Meraki."
     },
     {
       "n": 5,
@@ -56,7 +56,7 @@
       "width": 2880,
       "height": 1800,
       "sha256": "f49d12f91f2a8557a17510848beea9083ffcab361d9c34e4210a728aef81e2e6",
-      "callout": "Connect with a Meraki API key. That is the whole credential, and it stays masked."
+      "callout": "Connect with a Meraki API key. That is the whole credential, and it stays masked. Check what else can be set."
     },
     {
       "n": 6,
@@ -66,7 +66,7 @@
       "width": 2880,
       "height": 1800,
       "sha256": "6ffb94eb623e2fb875201c6577cb5a13f8f55401e659d8573333f25ac3f9a603",
-      "callout": "You can list organization or network IDs to skip, one per line. Here we sync everything."
+      "callout": "You can list organization or network IDs to skip, one per line. Here we sync everything. Continue to the summary."
     },
     {
       "n": 7,
@@ -76,7 +76,7 @@
       "width": 2880,
       "height": 1800,
       "sha256": "f25766f619f567acd748b4eae0f0b4b78e525448a6ca145c10e2e0553f741160",
-      "callout": "Review the summary. The key is not shown."
+      "callout": "Review the summary. The key is not shown. Add the service."
     },
     {
       "n": 8,
@@ -86,7 +86,7 @@
       "width": 2880,
       "height": 1800,
       "sha256": "f46d73ab0a04d2a35e3d29615bb45383aeb01420946dc7e4e155d7922bb4aa3c",
-      "callout": "Add a change comment."
+      "callout": "Micetro asks for a change comment, so every change carries its reason. Save it to add the service."
     },
     {
       "n": 9,
@@ -96,7 +96,7 @@
       "width": 2880,
       "height": 1800,
       "sha256": "8b9b3dee66ad95167cb372201141f9bc8533757bd76e12b9e50913fd74767444",
-      "callout": "The service is added and the first sync starts."
+      "callout": "The service is added and the first sync starts. Open the Meraki networks to see what it found."
     },
     {
       "n": 10,
