@@ -1,0 +1,182 @@
+{
+  "demo": "meraki-add-service",
+  "title": "Connect Cisco Meraki to Micetro with an API Key",
+  "repo": "joshuatownsend/storylane-staging",
+  "cta": {
+    "text": "See Micetro with your Meraki estate",
+    "url": "https://bluecatnetworks.com"
+  },
+  "prompt": "Product: BlueCat. Demo: \"Connect Cisco Meraki to Micetro with an API Key\".\nStory: Connect Cisco Meraki to Micetro in One Wizard\nYour Meraki branches already hold the networks, VLANs and clients you need to manage. Watch BlueCat Micetro connect to them with a single API key, with no appliance at any branch. About 3 minutes.\nAudience: network and DNS engineers and IT leaders evaluating the product. Tone: concise, confident, practical, no hype.\n17 screenshots, keep this order, one tooltip per image, calling out the highlighted UI element:\n1. Here is Micetro before the connection.\n2. To show the whole connection, we first remove the existing Meraki service.\n3. Remove service.\n4. Confirm the removal.\n5. Micetro asks for a change comment on every write.\n6. The service is gone, and so are its networks.\n7. Meraki is a built-in service type.\n8. Cisco Meraki, listed with the other DHCP and IPAM providers.\n9. A Micetro DHCP agent proxies the calls to Meraki. The central host works out of the box.\n10. Give the service a name you will recognise.\n11. Connect with a Meraki API key. That is the whole credential, and it stays masked.\n12. You can list organization or network IDs to skip, one per line. Here we sync everything.\n13. Review the summary. The key is not shown.\n14. Add the service.\n15. Add a change comment.\n16. The service is added and the first sync starts.\n17. The branch networks appear in the same pane as everything else, with no change to your Meraki setup and no appliance at each branch.\nClose: One API key, and every Meraki network appears next to the rest of your IP space.\nEnd with a call to action: See Micetro with your Meraki estate.",
+  "steps": [
+    {
+      "n": 1,
+      "stepId": "open-services",
+      "file": "step-01.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-01.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "ac9f754bb59b4706765d51bc20cb4f5d194dd34ddceeaed240d6eae88862b40c",
+      "callout": "Here is Micetro before the connection."
+    },
+    {
+      "n": 2,
+      "stepId": "open-service-menu",
+      "file": "step-02.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-02.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "9f57ab78e63adfbdb23f1acb496610df10fde2a3749762f9419aaaf1abe02de3",
+      "callout": "To show the whole connection, we first remove the existing Meraki service."
+    },
+    {
+      "n": 3,
+      "stepId": "run-remove-service",
+      "file": "step-03.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-03.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "b93d40ca7a6005a69fced8c215887f2df6fe805bfb1c5743e1fd40d3249e5da3",
+      "callout": "Remove service."
+    },
+    {
+      "n": 4,
+      "stepId": "confirm-remove",
+      "file": "step-04.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-04.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "f4ba51d4b69c88f952894abef8aefcfb905390fa098575ae2a065bcc1d7d19b9",
+      "callout": "Confirm the removal."
+    },
+    {
+      "n": 5,
+      "stepId": "comment-confirm-remove",
+      "file": "step-05.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-05.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "85ee2417660c3181ef768e20b9de7906b6ef95921ad097aa3df1f5aeed24309d",
+      "callout": "Micetro asks for a change comment on every write."
+    },
+    {
+      "n": 6,
+      "stepId": "save-comment-confirm-remove",
+      "file": "step-06.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-06.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "de76ee7309797fa294001f72ca75943041ca650fc5bdd131afe1e1cea9b37c64",
+      "callout": "The service is gone, and so are its networks."
+    },
+    {
+      "n": 7,
+      "stepId": "open-add-service",
+      "file": "step-07.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-07.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "2566e48a5edcdeaf330dd12f057bcd07f56da1bfd2d9e335214382cac4bba398",
+      "callout": "Meraki is a built-in service type."
+    },
+    {
+      "n": 8,
+      "stepId": "pick-meraki",
+      "file": "step-08.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-08.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "98871c8c8e1ac009fca6df878a1441c262a1c726112e92a25dce73b52848ddeb",
+      "callout": "Cisco Meraki, listed with the other DHCP and IPAM providers."
+    },
+    {
+      "n": 9,
+      "stepId": "next-to-properties",
+      "file": "step-09.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-09.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "3347463e69e340b64eb77a27a561eab8c2b8c82e9800c9c9a7aa171b921bed23",
+      "callout": "A Micetro DHCP agent proxies the calls to Meraki. The central host works out of the box."
+    },
+    {
+      "n": 10,
+      "stepId": "type-name",
+      "file": "step-10.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-10.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "67cf008174826a7dcd2f052dfe73c26c7e8ce9299cab51f5dddd40592d30c845",
+      "callout": "Give the service a name you will recognise."
+    },
+    {
+      "n": 11,
+      "stepId": "type-api-key",
+      "file": "step-11.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-11.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "782f33ea1fa6812b53732f763b391d0524cda07546e63eb0c4b9999f14d50fc0",
+      "callout": "Connect with a Meraki API key. That is the whole credential, and it stays masked."
+    },
+    {
+      "n": 12,
+      "stepId": "show-ignore-list",
+      "file": "step-12.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-12.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "b8b726984e9590d4ccea95c999b0716be343af4372b560d01da0f03a3ba358cb",
+      "callout": "You can list organization or network IDs to skip, one per line. Here we sync everything."
+    },
+    {
+      "n": 13,
+      "stepId": "next-to-summary",
+      "file": "step-13.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-13.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "efba55905fca1332e38ac5b6f4300fc5dacedace5aca18205cab50024ab6adb2",
+      "callout": "Review the summary. The key is not shown."
+    },
+    {
+      "n": 14,
+      "stepId": "run-add-service",
+      "file": "step-14.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-14.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "58ca93c14a08d863221d56f3fd2218424a7ba126cb017a8c41e048298f09100c",
+      "callout": "Add the service."
+    },
+    {
+      "n": 15,
+      "stepId": "comment-run-add-service",
+      "file": "step-15.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-15.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "ebe1cd89d3eebeb64bb1128467a0b923c862b2c25def920036781dd68574473e",
+      "callout": "Add a change comment."
+    },
+    {
+      "n": 16,
+      "stepId": "save-comment-run-add-service",
+      "file": "step-16.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-16.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "571934d5ed00ed484a238483049b0b9c118e07d3b59c65de24845cf7fae6f918",
+      "callout": "The service is added and the first sync starts."
+    },
+    {
+      "n": 17,
+      "stepId": "open-meraki-networks",
+      "file": "step-17.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-add-service/step-17.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "87617288f28d5c18f6a5de7d15772abde3bf31ab41cb3acb84abc7e07fb32c8a",
+      "callout": "The branch networks appear in the same pane as everything else, with no change to your Meraki setup and no appliance at each branch."
+    }
+  ]
+}
