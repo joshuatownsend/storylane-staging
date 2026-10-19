@@ -1,0 +1,372 @@
+{
+  "demo": "meraki-integration-tour",
+  "title": "Manage Your Meraki Networks from Micetro",
+  "repo": "joshuatownsend/storylane-staging",
+  "cta": {
+    "text": "See Micetro with your Meraki estate",
+    "url": "https://bluecatnetworks.com"
+  },
+  "prompt": "Product: BlueCat. Demo: \"Manage Your Meraki Networks from Micetro\".\nStory: Manage Meraki DHCP and IPAM from Micetro\nOnce Meraki is connected, its networks, VLANs, clients and fixed IPs show up in Micetro. Watch a reservation and an excluded range get created in Micetro and written to Meraki. About 5 minutes.\nAudience: network and DNS engineers and IT leaders evaluating the product. Tone: concise, confident, practical, no hype.\n36 screenshots, keep this order, one tooltip per image, calling out the highlighted UI element:\n1. Your Meraki branches sit in the same pane as your other networks: one source of truth.\n2. Switch to the flat view to see every network at once.\n3. Each Meraki network is a DHCP server; each VLAN is a scope.\n4. Hover a row and its menu button appears.\n5. Open the row menu for the Guest VLAN.\n6. Clients are leases, fixed IPs are reservations.\n7. Filter to the leases.\n8. History builds up as clients are synced.\n9. Now filter to free addresses.\n10. Pick a free address.\n11. Reserve it for a device.\n12. Name the reservation.\n13. Enter the device MAC address.\n14. Create the reservation.\n15. Add a change comment.\n16. Reserve it here and it is written to Meraki, with no trip to the Meraki dashboard.\n17. Back to the network list.\n18. Flat view again.\n19. Find the same network.\n20. Hover the row to bring up its menu.\n21. Open the row menu.\n22. Open the address pools.\n23. Add an excluded range.\n24. First address of the range.\n25. Last address of the range.\n26. Confirm the range.\n27. Save the pools.\n28. Add a change comment.\n29. Reserved ranges in Meraki appear as exclusions.\n30. Hover the row again.\n31. Open the row menu once more.\n32. Meraki LAN properties like lease time are DHCP options here.\n33. Nothing to change, so close it.\n34. One more time, for the history.\n35. One last item in the menu.\n36. Every action is logged with an audit trail, so changes made here are accountable.\nClose: Meraki DHCP, viewed and managed in the same pane as the rest of your network, with an audit trail.\nEnd with a call to action: See Micetro with your Meraki estate.",
+  "steps": [
+    {
+      "n": 1,
+      "stepId": "open-networks",
+      "file": "step-01.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-01.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "bd8850b0fe5ca70455fb573f48c109dfea595acbb39e4acf48aac45e59a3eab3",
+      "callout": "Your Meraki branches sit in the same pane as your other networks: one source of truth."
+    },
+    {
+      "n": 2,
+      "stepId": "flat-view",
+      "file": "step-02.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-02.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "d5e062bfc6c86c13ef53c1cf1bba0abbcaffa4dbb46c508e1e2f093e2b62b12a",
+      "callout": "Switch to the flat view to see every network at once."
+    },
+    {
+      "n": 3,
+      "stepId": "filter-helsinki",
+      "file": "step-03.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-03.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "6d46b5924225b4bb3437d7cf711c0e6162b75b45199f622bab2541c0d6ba047d",
+      "callout": "Each Meraki network is a DHCP server; each VLAN is a scope."
+    },
+    {
+      "n": 4,
+      "stepId": "hover-open-row-menu",
+      "file": "step-04.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-04.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "943d1dc08c6e6970532fd170736e8dceb0e638ea04157087dd9ebf24079577c2",
+      "callout": "Hover a row and its menu button appears."
+    },
+    {
+      "n": 5,
+      "stepId": "open-row-menu",
+      "file": "step-05.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-05.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "c0149e945357a7ddbb382951fbf9649a6ee634b5709610db07d2b9d7b71686bc",
+      "callout": "Open the row menu for the Guest VLAN."
+    },
+    {
+      "n": 6,
+      "stepId": "show-grid",
+      "file": "step-06.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-06.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "91de70f53397d50f692e2dcf3beb399416b67835b6f3e8289912158456ede117",
+      "callout": "Clients are leases, fixed IPs are reservations."
+    },
+    {
+      "n": 7,
+      "stepId": "filter-lease",
+      "file": "step-07.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-07.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "ca137e8a90215afcc5955ec033e254ede55b102dadc654fb77cf5505a6276042",
+      "callout": "Filter to the leases."
+    },
+    {
+      "n": 8,
+      "stepId": "select-lease",
+      "file": "step-08.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-08.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "3fbab91518f21a91bfa5e58df1fb1a85b7f427d8dd199bc8a8e0614a405b2cfc",
+      "callout": "History builds up as clients are synced."
+    },
+    {
+      "n": 9,
+      "stepId": "filter-free",
+      "file": "step-09.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-09.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "9e118d9f27dc883235d3611396f1751197c0308fcd11297f985333c3a760bd99",
+      "callout": "Now filter to free addresses."
+    },
+    {
+      "n": 10,
+      "stepId": "select-free",
+      "file": "step-10.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-10.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "b48e20180d7241bd09b7ffbd9a406cfc9a5a78a59c56b619d684adc05a727370",
+      "callout": "Pick a free address."
+    },
+    {
+      "n": 11,
+      "stepId": "open-reserve",
+      "file": "step-11.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-11.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "92adfc87daf505f9a5e25aa27eb46ee7ee857252a62011120dab160af454e082",
+      "callout": "Reserve it for a device."
+    },
+    {
+      "n": 12,
+      "stepId": "type-name",
+      "file": "step-12.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-12.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "2123e4d076f46dc5184aa1edc2b37217ab718a0a36fa7db2f3546761d38bf039",
+      "callout": "Name the reservation."
+    },
+    {
+      "n": 13,
+      "stepId": "type-mac",
+      "file": "step-13.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-13.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "089994454645cd3bc7d459bf09e75bcd9649bbd2dbc086da9482df65ec9a397c",
+      "callout": "Enter the device MAC address."
+    },
+    {
+      "n": 14,
+      "stepId": "run-create-reservation",
+      "file": "step-14.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-14.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "c2854477bcce7475f1556ff8e1ec9242a307a8305f57979792d5a19d16025b86",
+      "callout": "Create the reservation."
+    },
+    {
+      "n": 15,
+      "stepId": "comment-run-create-reservation",
+      "file": "step-15.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-15.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "65e94d603be9c1bed86a077b7deec57554bd5b377b5bcde3e296f6cb05a18c73",
+      "callout": "Add a change comment."
+    },
+    {
+      "n": 16,
+      "stepId": "save-comment-run-create-reservation",
+      "file": "step-16.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-16.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "91305133ed8671def00fafc4883cf9af9be96438a8356a67da2db8ffd459341f",
+      "callout": "Reserve it here and it is written to Meraki, with no trip to the Meraki dashboard."
+    },
+    {
+      "n": 17,
+      "stepId": "back-to-list",
+      "file": "step-17.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-17.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "b4f9589710fe9eb3f9e0504663f69fbcf4bef36ccb236bf753bccadbdf22dbe3",
+      "callout": "Back to the network list."
+    },
+    {
+      "n": 18,
+      "stepId": "flat-again",
+      "file": "step-18.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-18.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "512d689e2a1b558c8a7bf16c963109cca5eacb80b18f524b6171f93dd627863a",
+      "callout": "Flat view again."
+    },
+    {
+      "n": 19,
+      "stepId": "filter-again",
+      "file": "step-19.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-19.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "ed78ae518ff2ac1aa956c820d4b02115aeabd482a2111425a2d5c92936d3463b",
+      "callout": "Find the same network."
+    },
+    {
+      "n": 20,
+      "stepId": "hover-open-row-menu-2",
+      "file": "step-20.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-20.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "209e44fe54dc25f4d9f1b7ad487c60f263add6449f37c178607083aa1840f09e",
+      "callout": "Hover the row to bring up its menu."
+    },
+    {
+      "n": 21,
+      "stepId": "open-row-menu-2",
+      "file": "step-21.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-21.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "c0149e945357a7ddbb382951fbf9649a6ee634b5709610db07d2b9d7b71686bc",
+      "callout": "Open the row menu."
+    },
+    {
+      "n": 22,
+      "stepId": "open-pools",
+      "file": "step-22.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-22.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "789f7491aced3418d7dcc50f805dd7cbe3c768d7788a206b5232aab1aca742be",
+      "callout": "Open the address pools."
+    },
+    {
+      "n": 23,
+      "stepId": "open-add-exclusion",
+      "file": "step-23.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-23.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "5e12e777bcbcd6a479f24ae6e430b6a29933f94be35c241301e5fae1bb72efc8",
+      "callout": "Add an excluded range."
+    },
+    {
+      "n": 24,
+      "stepId": "type-from",
+      "file": "step-24.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-24.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "4e8ba9d40eb1b857afc114262139e7f2de9cfb23cef78edac3c5e5957c2a4cd3",
+      "callout": "First address of the range."
+    },
+    {
+      "n": 25,
+      "stepId": "type-to",
+      "file": "step-25.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-25.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "a29887291d3f77d75fcfc752d67e81b08d718f5ed25a41d13231443ac74c914a",
+      "callout": "Last address of the range."
+    },
+    {
+      "n": 26,
+      "stepId": "confirm-exclusion",
+      "file": "step-26.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-26.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "ad5ef30cb1214e14cc96b42e2be515b97685deab2ad810cb51c903f59e8295cc",
+      "callout": "Confirm the range."
+    },
+    {
+      "n": 27,
+      "stepId": "run-save-pools",
+      "file": "step-27.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-27.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "e6a9e79dfa41e3ccefd2542f52647253c22a130880dff3a1a8bd4a3ddcb6431e",
+      "callout": "Save the pools."
+    },
+    {
+      "n": 28,
+      "stepId": "comment-run-save-pools",
+      "file": "step-28.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-28.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "c27aaa9c3a89a1d1d9c1587a8835752e9018fe19c14c8c1ee968ebfabe96d826",
+      "callout": "Add a change comment."
+    },
+    {
+      "n": 29,
+      "stepId": "save-comment-run-save-pools",
+      "file": "step-29.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-29.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "fac47b156414a356b7c66149f209ddad1c616af81238e744f42988e5d306f644",
+      "callout": "Reserved ranges in Meraki appear as exclusions."
+    },
+    {
+      "n": 30,
+      "stepId": "hover-open-row-menu-3",
+      "file": "step-30.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-30.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "b313e9863e4b416a9a62900601132da56f32641a8e3d163e9119bb4a890c43cb",
+      "callout": "Hover the row again."
+    },
+    {
+      "n": 31,
+      "stepId": "open-row-menu-3",
+      "file": "step-31.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-31.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "ed77b44044e1e2c0544528f5ed5e8c5cd57ba53e35f6fd203efd7c6c9e7283c1",
+      "callout": "Open the row menu once more."
+    },
+    {
+      "n": 32,
+      "stepId": "open-options",
+      "file": "step-32.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-32.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "f50cb179ae4d96049f103ba3933abe3a11f7511c258cd213bd2be7090b4861b1",
+      "callout": "Meraki LAN properties like lease time are DHCP options here."
+    },
+    {
+      "n": 33,
+      "stepId": "cancel-options",
+      "file": "step-33.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-33.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "f9855e2b98a65143d3fbaf1ee8172bc449b8696441280650d4f62e834ece17a2",
+      "callout": "Nothing to change, so close it."
+    },
+    {
+      "n": 34,
+      "stepId": "hover-open-row-menu-4",
+      "file": "step-34.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-34.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "b313e9863e4b416a9a62900601132da56f32641a8e3d163e9119bb4a890c43cb",
+      "callout": "One more time, for the history."
+    },
+    {
+      "n": 35,
+      "stepId": "open-row-menu-4",
+      "file": "step-35.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-35.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "ed77b44044e1e2c0544528f5ed5e8c5cd57ba53e35f6fd203efd7c6c9e7283c1",
+      "callout": "One last item in the menu."
+    },
+    {
+      "n": 36,
+      "stepId": "open-history",
+      "file": "step-36.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/meraki-integration-tour/step-36.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "95c8cd62acad19636efdb700f81da69273603ea5843c0ea73d00919ba5c6c6eb",
+      "callout": "Every action is logged with an audit trail, so changes made here are accountable."
+    }
+  ]
+}
