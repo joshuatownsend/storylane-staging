@@ -1,0 +1,72 @@
+{
+  "demo": "unified-microsoft-dhcp",
+  "title": "Unified Microsoft DHCP Management",
+  "repo": "joshuatownsend/storylane-staging",
+  "cta": {
+    "text": "See Micetro with your Microsoft servers",
+    "url": "https://bluecatnetworks.com/products/micetro"
+  },
+  "prompt": "Product: BlueCat. Demo: \"Unified Microsoft DHCP Management\".\nStart with one welcome step whose title is exactly \"Every Microsoft DHCP Server and Scope in One Console\" and whose text is exactly: Answering \"which scopes exist where, and how full are they\" usually means a login per Windows server. BlueCat Micetro is already connected to the DHCP servers. Watch it list them together, put every scope in one grid, narrow it by server and by site, and show how full a scope is, without touching a server.\nAudience: network and DNS engineers and IT leaders evaluating the product. Tone: concise, confident, practical, no hype.\n6 screenshots, keep this order, one tooltip per image, calling out the highlighted UI element. Use the text of each numbered tooltip EXACTLY as written; do not rewrite, shorten or merge it. Do not add a closing step or a closing message after the last screenshot; its own tooltip is the end.\n1. Your Microsoft DHCP servers are listed together here: DC01, DC02 and DC03. Nothing on them was changed. Open a server's menu to see what you can do from here.\n2. One menu holds the server-level DHCP tasks: manage options and policy, reconcile scopes, manage failover and replicate it. Now the scopes themselves, all in one grid.\n3. One click on DHCP scopes turns the grid into a hierarchical view of every DHCP scope Micetro manages, from all DHCP servers, grouped under their containers with utilization, authority and AD site. Pick one server to see only its scopes.\n4. Pick DLG-DC02. and the same hierarchy shows only the scopes that server carries. That answers \"what runs there\" without logging in to the server. Narrow it by site next.\n5. Add a site to the Quick filter and the same grid answers \"what runs at this branch\": here, the scope that serves Ashburn. Open it to see how full it is.\n6. The Inspector shows 68% utilization, the pool and exclusions, and the failover partner, all without logging in to the server. Near-full scopes stand out before users call.",
+  "steps": [
+    {
+      "n": 1,
+      "stepId": "open-ms-dhcp",
+      "file": "step-01.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/unified-microsoft-dhcp/step-01.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "1da8e19618c5621cb157e5d28b94da4417604cdec4c3dd1f6981f2685753cff4",
+      "callout": "Your Microsoft DHCP servers are listed together here: DC01, DC02 and DC03. Nothing on them was changed. Open a server's menu to see what you can do from here."
+    },
+    {
+      "n": 2,
+      "stepId": "open-dc01-menu",
+      "file": "step-02.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/unified-microsoft-dhcp/step-02.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "03f4e6e308eb8b674a810eb8410b46f16c3c549cfbcec86ebae689962eaf757b",
+      "callout": "One menu holds the server-level DHCP tasks: manage options and policy, reconcile scopes, manage failover and replicate it. Now the scopes themselves, all in one grid."
+    },
+    {
+      "n": 3,
+      "stepId": "filter-dhcp-scopes",
+      "file": "step-03.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/unified-microsoft-dhcp/step-03.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "0b67644ea544c803635a80f4b7058408a591a22e0920a95773b75a25d262d33d",
+      "callout": "One click on DHCP scopes turns the grid into a hierarchical view of every DHCP scope Micetro manages, from all DHCP servers, grouped under their containers with utilization, authority and AD site. Pick one server to see only its scopes."
+    },
+    {
+      "n": 4,
+      "stepId": "pick-dc02",
+      "file": "step-04.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/unified-microsoft-dhcp/step-04.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "4efcbb923c172c2535b73bbe3c15d60ec0e94c51d61d7e449436c7c632d5677a",
+      "callout": "Pick DLG-DC02. and the same hierarchy shows only the scopes that server carries. That answers \"what runs there\" without logging in to the server. Narrow it by site next."
+    },
+    {
+      "n": 5,
+      "stepId": "filter-site",
+      "file": "step-05.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/unified-microsoft-dhcp/step-05.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "da54de861d1beedac0b15fb8335cbea62f03e52a3e068d6ea762dfd82cc18731",
+      "callout": "Add a site to the Quick filter and the same grid answers \"what runs at this branch\": here, the scope that serves Ashburn. Open it to see how full it is."
+    },
+    {
+      "n": 6,
+      "stepId": "select-scope",
+      "file": "step-06.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/unified-microsoft-dhcp/step-06.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "a38b447ab6653a325f72bce3f29531aec40ebb7b8ef5282fe37e56704868ccda",
+      "callout": "The Inspector shows 68% utilization, the pool and exclusions, and the failover partner, all without logging in to the server. Near-full scopes stand out before users call."
+    }
+  ]
+}
