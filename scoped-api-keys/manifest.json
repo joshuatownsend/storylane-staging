@@ -1,0 +1,92 @@
+{
+  "demo": "scoped-api-keys",
+  "title": "Scoped API Keys in Micetro 26.2",
+  "repo": "joshuatownsend/storylane-staging",
+  "cta": {
+    "text": "See what is new in Micetro 26.2",
+    "url": "https://bluecatnetworks.com/products/micetro"
+  },
+  "prompt": "Product: BlueCat. Demo: \"Scoped API Keys in Micetro 26.2\".\nStart with one welcome step whose title is exactly \"Give a Script Its Own API Key, Scoped to What It Needs\" and whose text is exactly: Create a user that cannot sign in, give it a read-only DNS role, issue it an API key, and watch a script read DNS zones with that key.\nAudience: network and DNS engineers and IT leaders evaluating the product. Tone: concise, confident, practical, no hype.\n8 screenshots, keep this order, one tooltip per image, calling out the highlighted UI element. Use the text of each numbered tooltip EXACTLY as written; do not rewrite, shorten or merge it. Do not add a closing step or a closing message after the last screenshot; its own tooltip is the end.\n1. Automation should not borrow a person's account. In Admin, Configuration, these are the users Micetro already has.\n2. Create a user of its own for the script.\n3. Authentication type System means this user cannot sign in. It can only call the API. The DNS Viewers role gives it read-only access to DNS.\n4. The user exists, scoped before it has a key.\n5. View effective access shows everything this user can reach, including what it inherits. DNS comes from the DNS Viewers role. Workflow comes from the All users group, which every user belongs to.\n6. From the user's row menu, open Manage API keys.\n7. Micetro shows the key once, so this is the moment to copy it. This is a throwaway key for a lab, removed when the demo is done.\n8. Send the key as a bearer token and the script reads the DNS zones. The role is read-only, so the same key cannot change DNS.",
+  "steps": [
+    {
+      "n": 1,
+      "stepId": "open-users",
+      "file": "step-01.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/scoped-api-keys/step-01.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "9e8bdfd9a603fc77c503127207a5b9a34a91f838a5ad0743a95d7ce2e02e27e1",
+      "callout": "Automation should not borrow a person's account. In Admin, Configuration, these are the users Micetro already has."
+    },
+    {
+      "n": 2,
+      "stepId": "create-user",
+      "file": "step-02.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/scoped-api-keys/step-02.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "507630162e1a15ce74f23ba502a81baf899ede8cfab255f704bead0db25be729",
+      "callout": "Create a user of its own for the script."
+    },
+    {
+      "n": 3,
+      "stepId": "pick-role",
+      "file": "step-03.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/scoped-api-keys/step-03.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "441cd523d5782e87816e29012389fd0e703c720ce313d1eb10bee4f34507e59b",
+      "callout": "Authentication type System means this user cannot sign in. It can only call the API. The DNS Viewers role gives it read-only access to DNS."
+    },
+    {
+      "n": 4,
+      "stepId": "confirm-save",
+      "file": "step-04.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/scoped-api-keys/step-04.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "c1d96c1593d4b5f2774e169d318d4cced9d7e2226691e805f67c847c3bb73208",
+      "callout": "The user exists, scoped before it has a key."
+    },
+    {
+      "n": 5,
+      "stepId": "view-access",
+      "file": "step-05.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/scoped-api-keys/step-05.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "76f7e4ed59b4926641fe8ee73e56c5b981f4e204d82dd7d6ed97fa68f2faf137",
+      "callout": "View effective access shows everything this user can reach, including what it inherits. DNS comes from the DNS Viewers role. Workflow comes from the All users group, which every user belongs to."
+    },
+    {
+      "n": 6,
+      "stepId": "manage-keys",
+      "file": "step-06.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/scoped-api-keys/step-06.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "d83c499fe1b62ca2656f5ea45608c5e0b2937cfc84e8c85917bfb66e4ac62e06",
+      "callout": "From the user's row menu, open Manage API keys."
+    },
+    {
+      "n": 7,
+      "stepId": "confirm-key",
+      "file": "step-07.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/scoped-api-keys/step-07.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "d5694ad598405a8e95602128cd71445b011e28c1505daf58d930ba365ffee65a",
+      "callout": "Micetro shows the key once, so this is the moment to copy it. This is a throwaway key for a lab, removed when the demo is done."
+    },
+    {
+      "n": 8,
+      "stepId": "call-api",
+      "file": "step-08.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/scoped-api-keys/step-08.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "71b382a28c3e7e51314a1629155d384827e6b427412adbdfdac727731ad5a8cd",
+      "callout": "Send the key as a bearer token and the script reads the DNS zones. The role is read-only, so the same key cannot change DNS."
+    }
+  ]
+}
