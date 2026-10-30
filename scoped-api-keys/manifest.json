@@ -20,12 +20,12 @@
     },
     {
       "n": 2,
-      "stepId": "create-user",
+      "stepId": "describe-user",
       "file": "step-02.png",
       "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/scoped-api-keys/step-02.png",
       "width": 2880,
       "height": 1800,
-      "sha256": "507630162e1a15ce74f23ba502a81baf899ede8cfab255f704bead0db25be729",
+      "sha256": "335decbb5587d916afa1eda8a658e14aad7cc403f485ac44b9c5681603d96db9",
       "callout": "Create a user of its own for the script."
     },
     {
