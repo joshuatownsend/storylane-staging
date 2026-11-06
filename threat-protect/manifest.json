@@ -1,0 +1,112 @@
+{
+  "demo": "threat-protect",
+  "title": "Threat Protect in Micetro 26.2",
+  "repo": "joshuatownsend/storylane-staging",
+  "cta": {
+    "text": "Secure your DNS queries with Micetro",
+    "url": "https://bluecatnetworks.com/products/micetro/"
+  },
+  "prompt": "Product: BlueCat. Demo: \"Threat Protect in Micetro 26.2\".\nStart with one welcome step whose title is exactly \"Block Known-Bad Domains at the DNS Layer\" and whose text is exactly: Switch on Threat Protect with a licence, create a policy from a risk feed, watch a lookup go from resolving to blocked, send the log to your SIEM, and switch the policy to a redirect.\nAudience: network and DNS engineers and IT leaders evaluating the product. Tone: concise, confident, practical, no hype.\n10 screenshots, keep this order, one tooltip per image, calling out the highlighted UI element. Use the text of each numbered tooltip EXACTLY as written; do not rewrite, shorten or merge it. Do not add a closing step or a closing message after the last screenshot; its own tooltip is the end.\n1. The problem: this domain is on a known malware feed, and your DNS resolves it like any other name. Users can reach it, and nothing stops them.\n2. The fix: with a Threat Protect policy in place, the same lookup fails. The domain is blocked at DNS, before any connection starts. Here is how to set it up.\n3. Setup starts on the Admin page. Threat Protect needs a licence, so we upload one to switch it on.\n4. Choose the licence file from your drive and upload it.\n5. Threat Protect is on. Policies are listed here, and the list is empty, so we make the first one.\n6. Pick a feed by risk, an action and the appliance, all in one dialog. The action is Block, which answers with NXDOMAIN.\n7. Blocked lookups can be logged. One line, category rpz, sends them to the syslog server.\n8. The events arrive in the SIEM your security team already runs: which domain, from which client, and when.\n9. Last, change the action without rebuilding the policy. Redirect sends users to a page you choose, here our own site.\n10. Now the same lookup answers with the redirect target's addresses. The blocked name is only an alias for it.",
+  "steps": [
+    {
+      "n": 1,
+      "stepId": "lookup-before",
+      "file": "step-01.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/threat-protect/step-01.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "c1e4e6ce47152da01050f65ccc481ea5eaa597fdb7ca768f08ce08eef9e18807",
+      "callout": "The problem: this domain is on a known malware feed, and your DNS resolves it like any other name. Users can reach it, and nothing stops them."
+    },
+    {
+      "n": 2,
+      "stepId": "lookup-after",
+      "file": "step-02.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/threat-protect/step-02.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "050603253c38695f0db8a499f93fac4f338f699166f5e045d3df8dcc882bec7d",
+      "callout": "The fix: with a Threat Protect policy in place, the same lookup fails. The domain is blocked at DNS, before any connection starts. Here is how to set it up."
+    },
+    {
+      "n": 3,
+      "stepId": "open-threat-protect",
+      "file": "step-03.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/threat-protect/step-03.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "c267fe22be1a3266d449351bbaddcd07604878a2d0b3b432c8e4fbc5cb9745f4",
+      "callout": "Setup starts on the Admin page. Threat Protect needs a licence, so we upload one to switch it on."
+    },
+    {
+      "n": 4,
+      "stepId": "pick-licence",
+      "file": "step-04.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/threat-protect/step-04.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "337c2faa346f74e9ded8e2b1159ebd35af0c26e7ac49791ff7c366e16aafb31b",
+      "callout": "Choose the licence file from your drive and upload it."
+    },
+    {
+      "n": 5,
+      "stepId": "licensed",
+      "file": "step-05.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/threat-protect/step-05.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "5c6a1919639cc148d242426ef0f30f3a9d380664d14632e9b8ae7af51124a81c",
+      "callout": "Threat Protect is on. Policies are listed here, and the list is empty, so we make the first one."
+    },
+    {
+      "n": 6,
+      "stepId": "pick-mdds01",
+      "file": "step-06.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/threat-protect/step-06.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "9c45d15262499e83a653d65f8b1c271d5952d5e988dac4d5eca07a3d5594ee5f",
+      "callout": "Pick a feed by risk, an action and the appliance, all in one dialog. The action is Block, which answers with NXDOMAIN."
+    },
+    {
+      "n": 7,
+      "stepId": "edit-rpz",
+      "file": "step-07.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/threat-protect/step-07.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "85d92d0e913da89b00a6feb62fa93c95e3f2789b4f6f66cbe1c579564c90965c",
+      "callout": "Blocked lookups can be logged. One line, category rpz, sends them to the syslog server."
+    },
+    {
+      "n": 8,
+      "stepId": "siem",
+      "file": "step-08.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/threat-protect/step-08.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "0dbfbecc97ef8127b0f4efb4a8925918cbf3d51eb126123fc1731a7766a3fdaf",
+      "callout": "The events arrive in the SIEM your security team already runs: which domain, from which client, and when."
+    },
+    {
+      "n": 9,
+      "stepId": "fill-target",
+      "file": "step-09.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/threat-protect/step-09.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "e121e01c55cd9219720063dc50d300b5e79ca43f0c1175167c7df830a75c37ec",
+      "callout": "Last, change the action without rebuilding the policy. Redirect sends users to a page you choose, here our own site."
+    },
+    {
+      "n": 10,
+      "stepId": "lookup-redirect",
+      "file": "step-10.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/threat-protect/step-10.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "6206ebd17d4152be0a65240e3b1719592d394ead8d978a7803a7a34eac4b2f5a",
+      "callout": "Now the same lookup answers with the redirect target's addresses. The blocked name is only an alias for it."
+    }
+  ]
+}
