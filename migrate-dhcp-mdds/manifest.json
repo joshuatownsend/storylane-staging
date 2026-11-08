@@ -1,0 +1,52 @@
+{
+  "demo": "migrate-dhcp-mdds",
+  "title": "Move a Microsoft DHCP Scope to a BlueCat DHCP Server",
+  "repo": "joshuatownsend/storylane-staging",
+  "cta": {
+    "text": "See Micetro with your Microsoft DHCP servers",
+    "url": "https://bluecatnetworks.com/products/micetro"
+  },
+  "prompt": "Product: BlueCat. Demo: \"Move a Microsoft DHCP Scope to a BlueCat DHCP Server\".\nStart with one welcome step whose title is exactly \"Move a Microsoft DHCP Scope to MDDS, With a Safety Check First\" and whose text is exactly: See how BlueCat Micetro checks a migration before it moves a scope from a Microsoft DHCP server to a BlueCat DHCP server, and tells you what will not come across.\nAudience: network and DNS engineers and IT leaders evaluating the product. Tone: concise, confident, practical, no hype.\n4 screenshots, keep this order, one tooltip per image, calling out the highlighted UI element. Use the text of each numbered tooltip EXACTLY as written; do not rewrite, shorten or merge it. Do not add a closing step or a closing message after the last screenshot; its own tooltip is the end.\n1. This DHCP scope is served by a Microsoft server today. To move it to a BlueCat appliance, open its menu and choose Migrate DHCP scope.\n2. Pick MDDS02 as the destination. Moving between different types of DHCP server always removes the old scope, so choose Deleted, then select Verify.\n3. Before anything moves, Micetro lists what will not come across: Microsoft-only policies and DDNS settings. Review the warnings, then select Migrate.\n4. The same range is now served by MDDS02, and the Microsoft server no longer holds it. The scope and its address pool came across.",
+  "steps": [
+    {
+      "n": 1,
+      "stepId": "open-row-menu",
+      "file": "step-01.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/migrate-dhcp-mdds/step-01.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "970596f6289735ec5d647266d9dfeac8fc603fc978e636f860faf40196716095",
+      "callout": "This DHCP scope is served by a Microsoft server today. To move it to a BlueCat appliance, open its menu and choose Migrate DHCP scope."
+    },
+    {
+      "n": 2,
+      "stepId": "pick-deleted",
+      "file": "step-02.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/migrate-dhcp-mdds/step-02.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "1a9df5c6a89fb5b8a6d7c316553b539401ba6578d81d4af4afa805c3844467e6",
+      "callout": "Pick MDDS02 as the destination. Moving between different types of DHCP server always removes the old scope, so choose Deleted, then select Verify."
+    },
+    {
+      "n": 3,
+      "stepId": "verify",
+      "file": "step-03.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/migrate-dhcp-mdds/step-03.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "f98866e3f13c577dac4b5fe9071ed00c265c1f462f9394cb111dd742760eab76",
+      "callout": "Before anything moves, Micetro lists what will not come across: Microsoft-only policies and DDNS settings. Review the warnings, then select Migrate."
+    },
+    {
+      "n": 4,
+      "stepId": "find-scope-2",
+      "file": "step-04.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/migrate-dhcp-mdds/step-04.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "97c7b5b1eb372c761973c318c4f875628f3431a35f6ff8ee1125985e926447a0",
+      "callout": "The same range is now served by MDDS02, and the Microsoft server no longer holds it. The scope and its address pool came across."
+    }
+  ]
+}
