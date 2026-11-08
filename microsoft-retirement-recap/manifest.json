@@ -1,0 +1,92 @@
+{
+  "demo": "microsoft-retirement-recap",
+  "title": "Retire Microsoft DNS and DHCP: The Whole Path",
+  "repo": "joshuatownsend/storylane-staging",
+  "cta": {
+    "text": "See Micetro with your Microsoft servers",
+    "url": "https://bluecatnetworks.com/products/micetro"
+  },
+  "prompt": "Product: BlueCat. Demo: \"Retire Microsoft DNS and DHCP: The Whole Path\".\nStart with one welcome step whose title is exactly \"Retire Microsoft DNS and DHCP, One Stage at a Time\" and whose text is exactly: See the whole path in Micetro: add your Microsoft servers, take inventory, stabilize, move DNS and DHCP, and stay ahead of problems.\nAudience: IT directors deciding whether to start a Microsoft DNS and DHCP retirement. Tone: concise, confident, practical, no hype.\n8 screenshots, keep this order, one tooltip per image, calling out the highlighted UI element. Use the text of each numbered tooltip EXACTLY as written; do not rewrite, shorten or merge it. Do not add a closing step or a closing message after the last screenshot; its own tooltip is the end.\n1. Start by adding your Microsoft servers. Micetro connects to them without installing anything on them, and DLG-DC03 now appears next to the other domain controllers.\n2. Next, see what each server carries before you move anything: its scopes, AD site and failover partner. Nothing on the servers is changed.\n3. Day to day, one grid lists every Microsoft DHCP scope. The Inspector shows utilization, the pool and the failover partner without logging in to a server.\n4. Close the gaps before cutover. Each failover partner you add shortens the list of scopes that depend on a single server: here it drops by one.\n5. Move DNS: a zone is copied to Azure DNS with its records, and the Windows copy keeps answering until you choose to retire it.\n6. Move DHCP: Micetro checks the migration first and lists what will not come across, such as Microsoft-only policies and DDNS settings. The scope and its address pool arrive on the BlueCat appliance.\n7. During the move your zones live on several platforms. Micetro lists them in one grid, and a filter narrows it to one platform, such as the zones held in Azure DNS.\n8. Stay ahead: Micetro emails your team when a scope runs low on free addresses, before clients fail to get one. The message names the subnet and the threshold.",
+  "steps": [
+    {
+      "n": 1,
+      "stepId": "add-windows-dns-dhcp-server",
+      "file": "step-01.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/microsoft-retirement-recap/step-01.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "79121fbf8bd2463c8314f1927681e9edf3a5852df7a0e5515925ec1e639f2d8d",
+      "callout": "Start by adding your Microsoft servers. Micetro connects to them without installing anything on them, and DLG-DC03 now appears next to the other domain controllers."
+    },
+    {
+      "n": 2,
+      "stepId": "discover-microsoft-estate",
+      "file": "step-02.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/microsoft-retirement-recap/step-02.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "8ce8fd77600df462269406d50bf01d40c87a32a42589bd591d26e8aa35afa5a5",
+      "callout": "Next, see what each server carries before you move anything: its scopes, AD site and failover partner. Nothing on the servers is changed."
+    },
+    {
+      "n": 3,
+      "stepId": "unified-microsoft-dhcp",
+      "file": "step-03.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/microsoft-retirement-recap/step-03.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "a38b447ab6653a325f72bce3f29531aec40ebb7b8ef5282fe37e56704868ccda",
+      "callout": "Day to day, one grid lists every Microsoft DHCP scope. The Inspector shows utilization, the pool and the failover partner without logging in to a server."
+    },
+    {
+      "n": 4,
+      "stepId": "stabilize-microsoft-estate",
+      "file": "step-04.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/microsoft-retirement-recap/step-04.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "584972779e54889007f1f9b58f5c723cf6dba6016feb0c5dfa51131963d06a5c",
+      "callout": "Close the gaps before cutover. Each failover partner you add shortens the list of scopes that depend on a single server: here it drops by one."
+    },
+    {
+      "n": 5,
+      "stepId": "migrate-dns-azure",
+      "file": "step-05.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/microsoft-retirement-recap/step-05.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "7920a8c785ad08ab259e5a4bc183ecb346acb06d358d7e63713ce6335f8dcff1",
+      "callout": "Move DNS: a zone is copied to Azure DNS with its records, and the Windows copy keeps answering until you choose to retire it."
+    },
+    {
+      "n": 6,
+      "stepId": "migrate-dhcp-mdds",
+      "file": "step-06.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/microsoft-retirement-recap/step-06.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "97c7b5b1eb372c761973c318c4f875628f3431a35f6ff8ee1125985e926447a0",
+      "callout": "Move DHCP: Micetro checks the migration first and lists what will not come across, such as Microsoft-only policies and DDNS settings. The scope and its address pool arrive on the BlueCat appliance."
+    },
+    {
+      "n": 7,
+      "stepId": "hybrid-microsoft-azure-mdds",
+      "file": "step-07.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/microsoft-retirement-recap/step-07.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "b6336c05562c73629def8546d7c7f97a26e79879035eec479202411b596bd670",
+      "callout": "During the move your zones live on several platforms. Micetro lists them in one grid, and a filter narrows it to one platform, such as the zones held in Azure DNS."
+    },
+    {
+      "n": 8,
+      "stepId": "monitor-dhcp-utilization",
+      "file": "step-08.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/microsoft-retirement-recap/step-08.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "7130ff206598b75a655f0ca2c191b098597cca27ad8b04d167a84fb5811f20c1",
+      "callout": "Stay ahead: Micetro emails your team when a scope runs low on free addresses, before clients fail to get one. The message names the subnet and the threshold."
+    }
+  ]
+}
