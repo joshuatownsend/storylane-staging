@@ -1,0 +1,89 @@
+{
+  "demo": "snmp-network-discovery-dark",
+  "title": "Modernized Network Discovery with SNMP",
+  "repo": "joshuatownsend/storylane-staging",
+  "cta": {
+    "text": "See Micetro discover your own network",
+    "url": "https://bluecatnetworks.com/products/micetro"
+  },
+  "prompt": "Product: BlueCat. Demo: \"Modernized Network Discovery with SNMP\".\nStart with one welcome step whose title is exactly \"Modernized Network Discovery with SNMP\" and whose text is exactly: Watch BlueCat Micetro 26.2 ask your routers over SNMP and fill in your IPv4 and IPv6 address plan by itself, inside one organization.\nAudience: network and DNS engineers and IT leaders evaluating the product. Tone: concise, confident, practical, no hype.\n7 screenshots, keep this order, one tooltip per image, calling out the highlighted UI element. Use the text of each numbered tooltip EXACTLY as written; do not rewrite, shorten or merge it. Do not add a closing step or a closing message after the last screenshot; its own tooltip is the end.\n1. This is the address plan for the default organization: the subnets someone has typed in by hand. Micetro can ask your routers what they actually carry instead.\n2. A profile holds how Micetro talks to your routers. This one is for older routers on SNMP version 2c, and the community string is the shared password. It is a throwaway for this demo.\n3. Tell Micetro to skip tiny point-to-point subnets: IPv4 at /30 and smaller, IPv6 at /126 and smaller. This only affects what is discovered from now on. The timeout and retries keep their defaults.\n4. Two profiles now sit side by side: one for routers on version 2c and one for routers on version 3, which adds a user name and masked passwords. Each profile belongs to this organization, so one team's scan never writes into another team's address plan.\n5. Scan the profiles now, or let Micetro do it in the background. Micetro asks each router for its subnets and address records over SNMP.\n6. Eight subnets arrived on their own, four IPv4 and four IPv6, with IPv4 utilization filled in from the routers' own records. The small link subnets did not.\n7. Back in the default organization nothing has changed, so you can roll discovery out one team at a time. Point Micetro at your routers and your address plan fills in by itself.",
+  "steps": [
+    {
+      "n": 1,
+      "stepId": "default-networks",
+      "file": "step-01.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/snmp-network-discovery-dark/step-01.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "8439657a91ed02728acfebb7b6c9ace707944c5f19fad1d3f2988a9752a7c4ce",
+      "callout": "This is the address plan for the default organization: the subnets someone has typed in by hand. Micetro can ask your routers what they actually carry instead."
+    },
+    {
+      "n": 2,
+      "stepId": "type-community",
+      "file": "step-02.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/snmp-network-discovery-dark/step-02.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "6055c498e24479101bf3f54cda56c1a9b719672a8c2cb443827ef7057bc4501f",
+      "callout": "A profile holds how Micetro talks to your routers. This one is for older routers on SNMP version 2c, and the community string is the shared password. It is a throwaway for this demo."
+    },
+    {
+      "n": 3,
+      "stepId": "pick-ignore-ipv6-126",
+      "file": "step-03.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/snmp-network-discovery-dark/step-03.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "1920f50d916ca55ede77e16d77a79871684ed504781aadd9edfec6dd92e1429d",
+      "callout": "Tell Micetro to skip tiny point-to-point subnets: IPv4 at /30 and smaller, IPv6 at /126 and smaller. This only affects what is discovered from now on. The timeout and retries keep their defaults."
+    },
+    {
+      "n": 4,
+      "stepId": "back-to-profiles",
+      "file": "step-04.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/snmp-network-discovery-dark/step-04.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "b6d861c04274b8c658d5cbc5abd5e878825c3750cf954bc0fbbe72239b3ae04b",
+      "callout": "Two profiles now sit side by side: one for routers on version 2c and one for routers on version 3, which adds a user name and masked passwords. Each profile belongs to this organization, so one team's scan never writes into another team's address plan."
+    },
+    {
+      "n": 5,
+      "stepId": "run-scan",
+      "file": "step-05.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/snmp-network-discovery-dark/step-05.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "28aaa99b61289c93a140eaa0e6c1cf70fc6feb48194b5c170299f609edbdb5ad",
+      "callout": "Scan the profiles now, or let Micetro do it in the background. Micetro asks each router for its subnets and address records over SNMP."
+    },
+    {
+      "n": 6,
+      "stepId": "flat-view",
+      "file": "step-06.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/snmp-network-discovery-dark/step-06.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "4bea1020ec3ad01cc2e31d9842691b9c5d575d9b7f45928b9e2ca5ef5f98b9ed",
+      "callout": "Eight subnets arrived on their own, four IPv4 and four IPv6, with IPv4 utilization filled in from the routers' own records. The small link subnets did not."
+    },
+    {
+      "n": 7,
+      "stepId": "default-networks-after",
+      "file": "step-07.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/snmp-network-discovery-dark/step-07.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "aafd237dd342668fbdb4cb9d8746731ed7f9807927401a11e23852b4cfa46d6e",
+      "callout": "Back in the default organization nothing has changed, so you can roll discovery out one team at a time."
+    }
+  ],
+  "closing": {
+    "n": 8,
+    "stepId": "default-networks-after",
+    "file": "step-07.png",
+    "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/snmp-network-discovery-dark/step-07.png",
+    "sha256": "aafd237dd342668fbdb4cb9d8746731ed7f9807927401a11e23852b4cfa46d6e"
+  }
+}
