@@ -1,0 +1,169 @@
+{
+  "demo": "centralize-ddi-control-dark",
+  "title": "Centralize DNS, DHCP, and IPAM for complete network control",
+  "repo": "joshuatownsend/storylane-staging",
+  "cta": {
+    "text": "Get my Micetro demo",
+    "url": "https://bluecatnetworks.com/products/micetro"
+  },
+  "prompt": "Product: BlueCat. Demo: \"Centralize DNS, DHCP, and IPAM for complete network control\".\nStart with one welcome step whose title is exactly \"Centralize DNS, DHCP, and IPAM for complete network control\" and whose text is exactly: Watch BlueCat Micetro bring your Microsoft DNS and DHCP servers into one console, send a DNS change through approval, and take one wrong change back on its own.\nAudience: network and DNS engineers and IT leaders evaluating the product. Tone: concise, confident, practical, no hype.\n15 screenshots, keep this order, one tooltip per image, calling out the highlighted UI element. Use the text of each numbered tooltip EXACTLY as written; do not rewrite, shorten or merge it. Do not add a closing step or a closing message after the last screenshot; its own tooltip is the end.\n1. These are the DNS zones from the Microsoft servers on this network, in one list. Nothing was installed on those servers, and your Microsoft tools keep working beside Micetro.\n2. Every DHCP scope from your Microsoft DHCP servers is in one grid too. Open one to see it in detail.\n3. One scope with its utilization, address pool and failover servers together, in place of a spreadsheet. Next, a change goes through approval.\n4. Priya is a junior admin with limited access. A new build agent, build-agent-07, needs a DNS record. Priya's role allows proposing the change, not publishing it. Select Add to request.\n5. The change waits in Priya's request queue, and nothing has reached the DNS server. Open the queue to review it.\n6. Priya adds a ticket number and the reason, so anyone reviewing the request later can see why. Submit the request.\n7. The request is in. Now it goes to Marcus Webb, a network lead with approval rights, who signs in with a separate account of their own.\n8. This is Marcus's Workflow page. It lists the pending request with who asked and the ticket number. Select the request to review it.\n9. Marcus checks the name, type and value of the change before deciding. Approve it, and only then is the record written to the Microsoft DNS server.\n10. build-agent-07 is now live in the zone. The record intranet-wiki was edited to the wrong address earlier. Open its menu to see its history.\n11. Every change is on record: who made it, when and why. The earlier edit to the wrong address is here with its ticket number. Open the menu on that row.\n12. Undo reverts only that change and leaves later ones alone, such as the record we just approved. Select Undo.\n13. Undo asks for a reason, which goes on record too. Save it.\n14. The revert sits in the history with its own ticket number. The change that came after it stays in place.\n15. intranet-wiki is back at the right address and the new record is still there. Your Microsoft servers kept running the whole time. Micetro sits over the servers you already run. Nothing on them was replaced.",
+  "steps": [
+    {
+      "n": 1,
+      "stepId": "open-zones",
+      "file": "step-01.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-01.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "e9b07131a1efe15c4ebc57751e53f95b37d58d4b415e35cffc7b9a9bf71e8eb5",
+      "callout": "These are the DNS zones from the Microsoft servers on this network, in one list. Nothing was installed on those servers, and your Microsoft tools keep working beside Micetro."
+    },
+    {
+      "n": 2,
+      "stepId": "filter-dhcp-scopes",
+      "file": "step-02.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-02.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "47f26fe1bcf9468d6340350655383c34c927cb82e92df55f5301d99bd3ddff14",
+      "callout": "Every DHCP scope from your Microsoft DHCP servers is in one grid too. Open one to see it in detail."
+    },
+    {
+      "n": 3,
+      "stepId": "select-scope",
+      "file": "step-03.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-03.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "801a5394fb5981a92095d106f69d19513034f3d7bf30321497161904b59267d3",
+      "callout": "One scope with its utilization, address pool and failover servers together, in place of a spreadsheet. Next, a change goes through approval."
+    },
+    {
+      "n": 4,
+      "stepId": "type-record-address",
+      "file": "step-04.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-04.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "9cc2bdaa04bf23552d521da985a4cac37889e65260c17c54d4120ffa40c30867",
+      "callout": "Priya is a junior admin with limited access. A new build agent, build-agent-07, needs a DNS record. Priya's role allows proposing the change, not publishing it. Select Add to request."
+    },
+    {
+      "n": 5,
+      "stepId": "add-to-request",
+      "file": "step-05.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-05.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "2509ce8fa7c4342ee46148b5623ca16acb2269ff3b6163f118048fb98d82a976",
+      "callout": "The change waits in Priya's request queue, and nothing has reached the DNS server. Open the queue to review it."
+    },
+    {
+      "n": 6,
+      "stepId": "type-request-comment",
+      "file": "step-06.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-06.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "80ecda70bfbc2c7f68fe997ffca831e1320b5813941a7733036c5364ee3e4ce4",
+      "callout": "Priya adds a ticket number and the reason, so anyone reviewing the request later can see why. Submit the request."
+    },
+    {
+      "n": 7,
+      "stepId": "switch-user",
+      "file": "step-07.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-07.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "cb825bffb5f8f09ec279290d2e199484a007ac065dd5d732ba082519dfd81383",
+      "callout": "The request is in. Now it goes to Marcus Webb, a network lead with approval rights, who signs in with a separate account of their own."
+    },
+    {
+      "n": 8,
+      "stepId": "open-pending",
+      "file": "step-08.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-08.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "ec974a5515373b9d2894db8c8d3b4ea692090c62d417c56482a9dcbd932a4d7c",
+      "callout": "This is Marcus's Workflow page. It lists the pending request with who asked and the ticket number. Select the request to review it."
+    },
+    {
+      "n": 9,
+      "stepId": "tick-change",
+      "file": "step-09.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-09.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "f5101f1a80bd9c78134b0cc4c31868f25385088ebcff9398079fa32d7eff9d82",
+      "callout": "Marcus checks the name, type and value of the change before deciding. Approve it, and only then is the record written to the Microsoft DNS server."
+    },
+    {
+      "n": 10,
+      "stepId": "live-hover-row",
+      "file": "step-10.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-10.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "387498cc01644596496f4467db129dfda032419e2166e87356e97eb351c5534e",
+      "callout": "build-agent-07 is now live in the zone. The record intranet-wiki was edited to the wrong address earlier. Open its menu to see its history."
+    },
+    {
+      "n": 11,
+      "stepId": "history-hover-row",
+      "file": "step-11.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-11.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "6a986f50b05508cf70447e78d0b05b9a70356096fc0d8aee297c1406fc765acd",
+      "callout": "Every change is on record: who made it, when and why. The earlier edit to the wrong address is here with its ticket number. Open the menu on that row."
+    },
+    {
+      "n": 12,
+      "stepId": "history-open-undo-menu",
+      "file": "step-12.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-12.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "016d193eeaf9c1378edaa5db712c7877c76c253b6f6f44276f9b6bca8f3152bc",
+      "callout": "Undo reverts only that change and leaves later ones alone, such as the record we just approved. Select Undo."
+    },
+    {
+      "n": 13,
+      "stepId": "history-undo-comment",
+      "file": "step-13.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-13.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "800d534d82ad97d90912bcbce78a87dc082e77f051a4a1102a72a7a5517b4533",
+      "callout": "Undo asks for a reason, which goes on record too. Save it."
+    },
+    {
+      "n": 14,
+      "stepId": "history-undo-save",
+      "file": "step-14.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-14.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "d8ad465e78422d4818a2a95d209e99baf77049aa96564c72a8924a377ea8bbd5",
+      "callout": "The revert sits in the history with its own ticket number. The change that came after it stays in place."
+    },
+    {
+      "n": 15,
+      "stepId": "final-zone",
+      "file": "step-15.png",
+      "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-15.png",
+      "width": 2880,
+      "height": 1800,
+      "sha256": "bb51304ee252e718873998b110e10f23383d1d6b4cf1aba336ec3659d41f9537",
+      "callout": "intranet-wiki is back at the right address and the new record is still there. Your Microsoft servers kept running the whole time."
+    }
+  ],
+  "closing": {
+    "n": 16,
+    "stepId": "final-zone",
+    "file": "step-15.png",
+    "url": "https://raw.githubusercontent.com/joshuatownsend/storylane-staging/main/centralize-ddi-control-dark/step-15.png",
+    "sha256": "bb51304ee252e718873998b110e10f23383d1d6b4cf1aba336ec3659d41f9537"
+  }
+}
